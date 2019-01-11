@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'my-personal-site',
+    title: 'Destiny Ajakaiye - Full-Stack Web Developer From Lagos',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -27,8 +27,16 @@ module.exports = {
         src: "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
         type: "text/javascript"
       }
-    ]
+    ],
+    css: [
+    
+    // CSS file in the project
+    '@/assets/css/custom.css',
+    
+  ]
   },
+
+
   /*
   ** Customize the progress bar color
   */
@@ -40,6 +48,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    extractCSS: true,
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
